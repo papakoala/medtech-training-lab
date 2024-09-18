@@ -21,6 +21,9 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100vw; /* 100% of the viewport width */
+
+    
 }
 
 /* Header content styles */
@@ -184,7 +187,8 @@ footer {
     padding: 20px 15px; /* Adjust padding to be more consistent with header */
     border-top: 1px solid #ddd; /* Matching the header's border style */
     font-size: 0.9rem; /* Adjusted font size */
-    width: 100%;
+    width: 100vw; /* 100% of the viewport width */
+
     position: relative;
     bottom: 0;
     clear: both;

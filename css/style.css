@@ -12,15 +12,15 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #ffffff;
-    color: #64a7ee;
-    padding: 10px 15px; /* Adjusted padding */
+    background: -webkit-linear-gradient(135deg, #64a7ee, #2f80ed); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(135deg, #64a7ee, #2f80ed); /* W3C, IE10+, FF16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
     text-align: center;
+    padding: 40px 15px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    border-bottom: 1px solid #ddd; /* Clean modern border */
+    flex-direction: column;
 }
 
 /* Header content styles */
@@ -31,37 +31,35 @@ header {
 }
 
 header .logo {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
     margin-right: 10px;
     border-radius: 5px;
 }
 
 /* Title adjustments */
 h1 {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     margin: 0;
     font-weight: 700; /* Bold for a modern feel */
 }
 
 /* Navigation styles */
 nav {
-    margin-left: auto;
+    margin-top: 20px;
     display: flex;
-    gap: 10px; /* Space between buttons */
+    gap: 15px;
 }
 
 /* Navigation button adjustments */
 nav a {
+    padding: 12px 25px;
     color: white;
+    background-color: #004080;
+    border-radius: 8px;
+    font-size: 1rem;
     text-decoration: none;
-    padding: 10px 20px;
-    background-color: #64a7ee;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Space between icon and text */
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 nav a:hover {
@@ -83,9 +81,23 @@ nav a i {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     display: flex;
-    flex-direction: column; /* Stack content vertically */
+    flex-direction: column;
     align-items: center; /* Center content */
-    text-align: center; /* Center-align all text */
+    text-align: left; /* Align text to the left */
+}
+
+/* Center the image and heading */
+.about-me-image,
+.about-me h3 {
+    display: block; /* Ensures they are block elements */
+    margin: 0 auto; /* Center horizontally */
+}
+
+/* Center heading specifically */
+.about-me h3 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px; /* Adjust as needed */
 }
 
 /* About Me Content */
@@ -127,6 +139,7 @@ nav a i {
     font-size: 1.2rem; /* Icon size */
 }
 
+
 /* Podcast Sections */
 .episode-section {
     margin: 40px auto;
@@ -138,14 +151,17 @@ nav a i {
     display: flex;
     flex-direction: column;
     align-items: center; /* Center-aligns content */
-    text-align: center; /* Center-aligns text */
+    text-align: left; /* Align text to the left */
 }
 
 /* Ensure consistent width for text and center-align */
-.episode-section h2,
+.episode-section h2 {
+    margin: 0 0 10px; /* Add spacing below h2 */
+}
+
 .episode-section p {
     max-width: 800px; /* Set a consistent max width for text */
-    margin: 0 auto; /* Center-align the text */
+    margin: 0 0 20px; /* Add spacing below paragraphs */
     padding: 10px 0; /* Add padding to separate elements */
 }
 
@@ -161,12 +177,13 @@ nav a i {
 
 /* Footer Styles */
 footer {
-    background-color: #ffffff; /* Same background color as header for consistency */
-    color: #64a7ee; /* Same color as the header text */
+    background: -webkit-linear-gradient(135deg, #64a7ee, #2f80ed); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(135deg, #64a7ee, #2f80ed); /* W3C, IE10+, FF16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white; /* Text color for contrast */
     text-align: center;
-    padding: 10px 15px; /* Reduced padding to match header */
+    padding: 20px 15px; /* Adjust padding to be more consistent with header */
     border-top: 1px solid #ddd; /* Matching the header's border style */
-    font-size: 0.9rem; /* Reduced font size for a more compact look */
+    font-size: 0.9rem; /* Adjusted font size */
     width: 100%;
     position: relative;
     bottom: 0;
@@ -203,7 +220,7 @@ footer {
     /* Adjust About Me section layout */
     .about-me {
         flex-direction: column;
-        text-align: center;
+        text-align: left; /* Align text to the left */
     }
 
     /* Center image on smaller screens */
@@ -215,7 +232,7 @@ footer {
 
     /* Resize and center About Me text */
     .about-me-text {
-        text-align: center;
+        text-align: left; /* Align text to the left */
     }
 
     /* Adjust button sizes in About Me section */
@@ -233,7 +250,7 @@ footer {
 
     /* Footer alignment */
     footer {
-        padding: 10px 15px; /* Ensure footer padding stays reduced on smaller screens */
+        padding: 15px 15px; /* Ensure footer padding stays consistent on smaller screens */
         font-size: 0.8rem;
     }
 }

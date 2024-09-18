@@ -1,139 +1,226 @@
+/* Global Styles */
 body {
     font-family: 'DM Sans', sans-serif;
     background-color: #f0f2f5;
     color: #333;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
+/* Header Styles */
 header {
     background-color: #ffffff;
-    color: #7ed957;
-    padding: 20px;
+    color: #64a7ee;
+    padding: 10px 15px; /* Adjusted padding */
     text-align: center;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-between;
+    flex-direction: row;
+    border-bottom: 1px solid #ddd; /* Clean modern border */
 }
 
+/* Header content styles */
 .header-content {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
 }
 
 header .logo {
-    width: 300px;
-    height: 300px;
-    margin-right: 20px;
-    border-radius: 10px;
-    background-color: white;
-    padding: 5px;
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    border-radius: 5px;
 }
 
+/* Title adjustments */
 h1 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     margin: 0;
+    font-weight: 700; /* Bold for a modern feel */
 }
 
+/* Navigation styles */
 nav {
-    margin-top: 20px;
+    margin-left: auto;
+    display: flex;
+    gap: 10px; /* Space between buttons */
 }
 
+/* Navigation button adjustments */
 nav a {
     color: white;
     text-decoration: none;
-    padding: 10px 20px;
-    background-color: #0073e6; /* Default button color */
+    padding: 8px 15px;
+    background-color: #64a7ee;
     border-radius: 5px;
     transition: background-color 0.3s;
-    display: inline-block;
-    margin: 5px;
+    font-size: 0.9rem;
 }
 
 nav a:hover {
-    background-color: #64a7ee; /* Hover button color */
+    background-color: #004080;
 }
 
-section {
-    margin: 40px auto;
-    padding: 20px;
-    max-width: 900px;
-    background-color: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-}
-
+/* About Me Section */
 .about-me {
     margin: 40px auto;
     padding: 20px;
-    max-width: 900px;
+    max-width: 700px;
     background-color: white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     display: flex;
     align-items: center;
     gap: 20px;
+    flex-direction: row;
 }
 
+/* About Me Content */
 .about-me-content {
     display: flex;
     align-items: flex-start;
     gap: 20px;
+    flex-wrap: wrap; /* Helps wrap content on smaller screens */
 }
 
 .about-me-image {
     border-radius: 50%;
-    width: 250px; /* Adjust size as needed */
-    height: 250px; /* Adjust size as needed */
+    width: 250px;
+    height: 250px;
 }
 
 .about-me-text {
-    flex: 1; /* Ensure text takes up remaining space */
+    flex: 1;
 }
 
-.about-me .buttons {
-    margin-top: 20px; /* Space above buttons */
-}
-
+/* Button styles */
 .about-me .buttons a {
     padding: 10px 20px;
-    background-color: #0073e6; /* Default button color */
-    color: white;
+    background-color: #64a7ee; /* Default state background color */
+    color: white; /* Default state text color */
     border-radius: 5px;
     text-decoration: none;
     margin-right: 10px;
     display: inline-block;
-    transition: background-color 0.3s; /* Added transition for consistency */
 }
 
 .about-me .buttons a:hover {
-    background-color: #64a7ee; /* Hover button color */
+    background-color: white; /* Hover background color */
+    color: #64a7ee; /* Hover text color */
 }
 
+/* Podcast Sections */
+.episode-section {
+    margin: 40px auto;
+    max-width: 700px; /* Ensure all sections have the same max-width */
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-aligns content */
+    text-align: center; /* Center-aligns text */
+}
+
+/* Ensure consistent width for text and center-align */
+.episode-section h2,
+.episode-section p {
+    max-width: 800px; /* Set a consistent max width for text */
+    margin: 0 auto; /* Center-align the text */
+    padding: 10px 0; /* Add padding to separate elements */
+}
+
+/* Podcast iframe styling */
+.episode-section iframe {
+    width: 100%;
+    max-width: 800px; /* Limiting the max width for better alignment */
+    height: 280px;
+    border: none;
+    border-radius: 12px;
+    margin: 20px auto; /* Center the iframe and add vertical spacing */
+}
+
+/* Footer Styles */
 footer {
+    background-color: #ffffff; /* Same background color as header for consistency */
+    color: #64a7ee; /* Same color as the header text */
     text-align: center;
-    padding: 30px;
-    background-color: #64a7ee; /* Updated color */
-    color: white;
+    padding: 10px 15px; /* Reduced padding to match header */
+    border-top: 1px solid #ddd; /* Matching the header's border style */
+    font-size: 0.9rem; /* Reduced font size for a more compact look */
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    clear: both;
 }
 
-.the {
-    color: #64a7ee; /* Blue color */
-}
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    /* Stack logo and title vertically */
+    .header-content {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
 
-.medtech {
-    color: #7ed957; /* Green color */
-}
+    /* Resize logo on smaller screens */
+    header .logo {
+        width: 120px;
+        height: 120px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
 
-.training-lab {
-    color: #64a7ee; /* Blue color */
-}
-h1 {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: bold; /* Use bold weight */
-    font-size: 2.5rem;
-    margin: 0;
+    /* Adjust title size */
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    /* Navigation button size adjustments */
+    nav a {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+
+    /* Adjust About Me section layout */
+    .about-me {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Center image on smaller screens */
+    .about-me-image {
+        margin-bottom: 20px;
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Resize and center About Me text */
+    .about-me-text {
+        text-align: center;
+    }
+
+    /* Adjust button sizes in About Me section */
+    .about-me .buttons a {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+    }
+
+    /* Podcast iframe width on mobile */
+    .episode-section iframe {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Footer alignment */
+    footer {
+        padding: 10px 15px; /* Ensure footer padding stays reduced on smaller screens */
+        font-size: 0.8rem;
+    }
 }

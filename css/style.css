@@ -55,15 +55,23 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    padding: 8px 15px;
+    padding: 10px 20px;
     background-color: #64a7ee;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
     transition: background-color 0.3s;
-    font-size: 0.9rem;
 }
 
 nav a:hover {
-    background-color: #004080;
+    background-color: white;
+    color: #64a7ee;
+    border: 1px solid #64a7ee;
+}
+
+nav a i {
+    font-size: 1.2rem;
 }
 
 /* About Me Section */
@@ -75,43 +83,48 @@ nav a:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     display: flex;
-    align-items: center;
-    gap: 20px;
-    flex-direction: row;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content */
+    text-align: center; /* Center-align all text */
 }
 
 /* About Me Content */
-.about-me-content {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    flex-wrap: wrap; /* Helps wrap content on smaller screens */
-}
-
 .about-me-image {
     border-radius: 50%;
     width: 250px;
     height: 250px;
 }
 
-.about-me-text {
-    flex: 1;
+/* Align buttons below the image and text */
+.about-me .buttons {
+    margin-top: 20px; /* Add space above buttons */
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between buttons */
+    flex-wrap: wrap; /* Ensure buttons wrap properly on small screens */
 }
 
 /* Button styles */
-.about-me .buttons a {
+.buttons a, nav a {
     padding: 10px 20px;
     background-color: #64a7ee; /* Default state background color */
     color: white; /* Default state text color */
     border-radius: 5px;
     text-decoration: none;
-    margin-right: 10px;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+    transition: background-color 0.3s;
 }
 
-.about-me .buttons a:hover {
+.buttons a:hover, nav a:hover {
     background-color: white; /* Hover background color */
     color: #64a7ee; /* Hover text color */
+    border: 1px solid #64a7ee; /* Optional border on hover */
+}
+
+.buttons a i, nav a i {
+    font-size: 1.2rem; /* Icon size */
 }
 
 /* Podcast Sections */

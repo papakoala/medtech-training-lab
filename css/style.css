@@ -122,7 +122,7 @@ nav a:hover {
 
 /* Episodes Section */
 .episodes-container {
-    width: 100%;
+    width: 75%;
     padding: 0 15px;
     display: flex;
     flex-direction: column;
@@ -189,7 +189,9 @@ footer {
         padding: 8px 12px;
         font-size: 0.9rem;
     }
-
+    .episodes-container {
+        width: 100%;
+    }
     .about-me {
         flex-direction: column;
         text-align: left;

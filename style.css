@@ -341,10 +341,14 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	max-width:1140px;
 }
 .h1-style{
-	font-family:"DM Sans";
+	font-family:"League Spartan";
+	font-weight:normal;
+	font-size:100px;
 }
 .h5-style{
-	font-family:"DM Sans";
+	font-family:"League Spartan";
+	font-size:30px;
+	font-weight:normal;
 }
 .p-style{
 	font-size:17px;
@@ -355,6 +359,26 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .bloc-fill{
 	fill:#FEFFFF;
 }
+.h1-bloc-0-42612-style{
+	font-family:"Fredoka";
+}
+.h1-2-style{
+	font-family:"League Spartan";
+	font-size:40pt;
+}
+.img-style{
+	width:50px;
+}
+.boton{
+	font-family:"Fredoka";
+	font-weight:normal;
+	color:#FEFFFF!important;
+	background-color:var(--swatch-var-6316);
+	caret-color:var(--swatch-var-2203);
+}
+.boton:hover{
+	background-color:var(--swatch-var-4763);
+}
 
 /* = Colour
 -------------------------------------------------------------- */
@@ -362,11 +386,15 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 /* Swatch Variables */
 :root{
 	
-	--swatch-var-6316:#3F8BED;
+	--swatch-var-6316:rgba(55,181,255,1.00);
 	
-	--swatch-var-6192:rgba(255,255,255,1.0);
+	--swatch-var-6192:rgba(255,255,255,1.00);
 	
-	--swatch-var-2203:#000000;
+	--swatch-var-2203:rgba(0,0,0,1.00);
+	
+	--swatch-var-3314:rgba(255,87,187,1.00);
+	
+	--swatch-var-4763:rgba(48,26,134,1.00);
 	
 }
 
@@ -383,15 +411,11 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	color:var(--swatch-var-6192)!important;
 }
 
-/* Button colour styles */
+/* Icon colour styles */
 
-.btn-c-6316{
-	background:var(--swatch-var-6316);
-	color:#FFFFFF!important;
-}
-.btn-c-6316:hover{
-	background:#0C58BA!important;
-	color:#FFFFFF!important;
+.icon-6192{
+	color:var(--swatch-var-6192)!important;
+	border-color:var(--swatch-var-6192)!important;
 }
 
 
@@ -485,6 +509,15 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 @media (max-width: 575px){
 	.footer-link{
 		text-align:center;
+	}
+	.h1-style{
+		font-weight:normal;
+		text-align:center;
+		text-transform:none;
+		text-overflow:clip;
+		font-display:block;
+		white-space:normal;
+		font-size:60px;
 	}
 	
 }

@@ -52,8 +52,37 @@ nav .dropdown-menu .nav-link{color:rgba(0,0,0,0.6)!important;} /* Maintain Downd
 
 /* Sizes */
 
-.bloc-lg{
-	padding:100px 20px;
+.bloc-md{
+	padding:50px 20px;
+}
+.bloc-sm{
+	padding:20px;
+}
+
+
+/* Background Effects */
+
+.parallax__container {
+	clip: rect(0, auto, auto, 0);
+	height: 100%;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index:-1;
+}
+.parallax {
+	position: fixed;
+	top: 0;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 
@@ -320,8 +349,11 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .p-style{
 	font-size:17px;
 }
-.img-style{
-	width:364px;
+.bloc-divider-b-fill{
+	fill:#FEFFFF;
+}
+.bloc-fill{
+	fill:#FEFFFF;
 }
 
 /* = Colour

@@ -59,6 +59,26 @@ nav .dropdown-menu .nav-link{color:rgba(0,0,0,0.6)!important;} /* Maintain Downd
 	padding:20px;
 }
 
+/* = Full Width Blocs 
+-------------------------------------------------------------- */
+
+.full-width-bloc{
+	padding-left:0;
+	padding-right:0;
+}
+.full-width-bloc .row{
+	margin-left:0;
+	margin-right:0;
+}
+.full-width-bloc .container{
+	width:100%;
+	max-width:100%!important;
+}
+.full-width-bloc .carousel img{
+	width:100%;
+	height:auto;
+}
+
 
 /* Background Effects */
 
@@ -343,11 +363,11 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .h1-style{
 	font-family:"League Spartan";
 	font-weight:normal;
-	font-size:100px;
+	font-size:101px;
 }
 .h5-style{
 	font-family:"League Spartan";
-	font-size:30px;
+	font-size:35px;
 	font-weight:normal;
 }
 .p-style{
@@ -366,19 +386,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	font-family:"League Spartan";
 	font-size:40pt;
 }
-.img-style{
-	width:50px;
-}
-.boton{
-	font-family:"Fredoka";
-	font-weight:normal;
-	color:#FEFFFF!important;
-	background-color:var(--swatch-var-6316);
-	caret-color:var(--swatch-var-2203);
-}
-.boton:hover{
-	background-color:var(--swatch-var-4763);
-}
 
 /* = Colour
 -------------------------------------------------------------- */
@@ -392,23 +399,34 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	
 	--swatch-var-2203:rgba(0,0,0,1.00);
 	
-	--swatch-var-3314:rgba(255,87,187,1.00);
+	--swatch-var-3314:#424242;
 	
 	--swatch-var-4763:rgba(48,26,134,1.00);
 	
+	--swatch-var-7880:rgba(255,255,255,0.46);
+	
 }
 
 
-/* Background colour styles */
-
-.bgc-6316{
-	background-color:var(--swatch-var-6316);
-}
 
 /* Text colour styles */
 
-.tc-6192{
-	color:var(--swatch-var-6192)!important;
+.tc-2203{
+	color:var(--swatch-var-2203)!important;
+}
+.tc-3314{
+	color:var(--swatch-var-3314)!important;
+}
+
+/* Button colour styles */
+
+.btn-c-2203{
+	background:var(--swatch-var-2203);
+	color:#FFFFFF!important;
+}
+.btn-c-2203:hover{
+	background:#000000!important;
+	color:#FFFFFF!important;
 }
 
 /* Icon colour styles */
@@ -518,6 +536,13 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 		font-display:block;
 		white-space:normal;
 		font-size:60px;
+	}
+	.img-about-me-style{
+		width:181px;
+		height:181px;
+	}
+	.h5-style{
+		font-size:33px;
 	}
 	
 }

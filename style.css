@@ -52,9 +52,6 @@ nav .dropdown-menu .nav-link{color:rgba(0,0,0,0.6)!important;} /* Maintain Downd
 
 /* Sizes */
 
-.bloc-lg{
-	padding:100px 20px;
-}
 .bloc-md{
 	padding:50px 20px;
 }
@@ -538,7 +535,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 		text-overflow:clip;
 		font-display:block;
 		white-space:normal;
-		font-size:60px;
+		font-size:61px;
 	}
 	.img-about-me-style{
 		width:181px;
@@ -546,6 +543,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	}
 	.h5-style{
 		font-size:33px;
+	}
+	.p-bloc-6-style{
+		font-size:11px;
 	}
 	
 }
